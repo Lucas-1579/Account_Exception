@@ -38,7 +38,7 @@ public class Account {
 		balance += amount;
 	}
 
-	public void withdraw(Double amount) {
+	public void withdraw(Double amount) throws Exception {
 		if (amount > withdrawLimit) {
 			throw new Exception("The amount exceeds withdraw limit");
 		}
